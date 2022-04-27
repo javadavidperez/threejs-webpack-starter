@@ -7,8 +7,16 @@
 html,
 body
 {
-    height: 100vh;
+    height: 800vh;
     font-family: 'Poppins';
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+
+body ::-webkit-scrollbar {
+display: none;
 }
 
 .webgl
@@ -18,3 +26,25 @@ body
     left: 0;
     outline: none;
 }
+main {
+    position: absolute;
+    height: 725vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+  }
+  .credit {
+      display: flex;
+      flex-wrap: wrap;
+    justify-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: azure;
+  }
+  /* .credit div {
+    display: flex;
+    justify-items: center;
+   } */
